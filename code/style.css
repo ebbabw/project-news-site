@@ -2,17 +2,26 @@
 body, html {
   margin: 0;
   height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
   overflow: none;
   background:#ffffff;
 }
 
-.hero-image img {
-  display: fixed;
+.ad1 {
   width: 100%;
-  height: 670px;
-  background-attachment: fixed;
-  background-position: top center; 
-  background-repeat: no-repeat;
+  height: 200px;
+  background-color: brown;
+  margin-bottom: 20px;
+
+
+}
+
+.hero-image img {
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  filter: brightness(0.7);
 }
 
 @media screen and (max-width: 992px) {
@@ -27,17 +36,18 @@ body, html {
   }
 }
 
-/****************** Sidebar style ***********************/
+
+/****************** Nav bar ***********************/
 
 .navigation {
   margin-top: 10px;
-  padding-top: 10px;
+  padding-top: 240px;
+  padding-right: 40px;
   padding-bottom: 30px;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 1;
-  background-color: rgba(128, 128, 128, 0.29);
 }
 
 .sidebar-right {
@@ -49,7 +59,7 @@ body, html {
 .sidebar-right a {
   text-decoration: none;
   padding: 10px;
-  color: rgb(255, 255, 255);
+  color: black;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 900;
   text-transform: uppercase;
@@ -91,13 +101,12 @@ body, html {
 .big-news-container {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 40%;
   padding-top: 7px;
   padding-bottom: 7px;
-  margin-top: 30%;
+  margin-top: 450px;
+  margin-left: 150px;
   z-index: 1;
-  background-color: rgba(150, 126, 46, 0.42);
-  color: white;
 }
 
 .date {
@@ -112,7 +121,8 @@ body, html {
   padding-bottom: 15px;
   padding-left: 20px;
   font-family: 'Playfair Display', serif;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .subject-story {
@@ -121,13 +131,15 @@ body, html {
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
   letter-spacing: 1;
+  margin-top: 30px;
 }
 
-.main-titel-story {
+.main-story {
   padding-bottom: 5px;
   padding-left: 20px;
   font-family: 'Playfair Display', serif;
   font-size: 30px; 
+  font-weight: 700;
 }
 
 .by {
@@ -147,7 +159,7 @@ a:link {
   text-decoration: none;
 } 
 
-.main-titel-story a:hover {
+.main-story a:hover {
   opacity: 70%;
   text-decoration: underline;
   color: rgba(230, 151, 141);
